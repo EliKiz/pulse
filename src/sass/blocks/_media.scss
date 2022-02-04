@@ -13,11 +13,24 @@
 }
 @media (max-width: 991px) {
     .carousel {
+        .tns-item {
+            img {
+                width: 100%
+            }
+        }
         .container {
             max-width: 840px;
         }
         .prev, .next {
             display: none;
+        }
+    }
+    .catalog {
+        .catalog-item {
+
+        }
+        &__content {
+            justify-content: space-around;
         }
     }
 }
@@ -44,6 +57,11 @@
     .consultation {
         .title_left {
             font-size: 26px;  
+        }
+    }
+    .catalog {
+        &__tab {
+            width: 160px
         }
     }
     
@@ -87,6 +105,20 @@
             font-size: 20px;
         }
     }
+    .catalog {
+        &_tabs {
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        &__tab {
+            font-size: 14px;
+            min-width: 120px;
+            font-size: 14px;
+            margin: 0 5px
+            
+        }
+    }
         
 }
 @media (max-width: 425px) {
@@ -97,6 +129,19 @@
         &__descr {
             font-size: 20px;
             line-height: 20px;
+        }
+    }
+    .catalog {
+        &__tabs {
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+        }
+        &__tab {
+            font-size: 14px;
+            width: 130px;
+            margin-top: 10px
         }
     }
 }
