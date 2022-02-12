@@ -17,6 +17,12 @@
             width: 70px;
             height: 70px;
         }
+        &_animated {
+            animation:  heartbeat 4s ease infinite;
+            &:hover {
+                animation-play-state: running;
+            }
+        }
         
     }
     &__subtitle {
