@@ -64,6 +64,38 @@
             width: 160px
         }
     }
+    .review {
+        &__wraper {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__text {
+            margin-left: 0px;
+            margin-top: 15px;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+        &__descr {
+            text-align: center;
+        }
+    }
+    .footer {
+        &__info {
+            width: 380px;
+            padding: 40px 50px 50px 50px;
+        }
+        &__addr {
+            margin-bottom: 25px;
+        }
+        &__phone {
+            margin-bottom: 25px;
+        }
+    }
     
 }
 @media (max-width: 576px) {
@@ -119,7 +151,12 @@
             
         }
     }
-        
+    .footer {
+        &__info {
+            width: 100%;
+            padding: 40px 30px 40px 30px;
+        }
+    }
 }
 @media (max-width: 425px) {
     .consultation {
@@ -144,6 +181,11 @@
             margin-top: 10px
         }
     }
+    /* .overlay {
+        &__pageup {
+            right: 30px;
+        }
+    } */
 }
 @media (max-width: 320px) {
     .header {
